@@ -1,0 +1,87 @@
+=====================================================================
+PASTE THESE INTO NETBEANS (CalculatorFrame.java, Source view)
+Put the three variables near the top of the class, OUTSIDE the
+"Generated Code" block. Then paste the four handler methods.
+=====================================================================
+
+// ---- instance variables ----
+private double firstOperand = 0;
+private String operator = "";
+private boolean startNewNumber = true;
+
+// ---- safe number reader (stops a crash when the display says "Error") ----
+private double readDisplay() {
+    try {
+        return Double.parseDouble(display.getText());
+    } catch (NumberFormatException ex) {
+        return 0;
+    }
+}
+
+// ---- NUMBER buttons (7 8 9 4 5 6 1 2 3 0) ----
+private void btnNumberActionPerformed(java.awt.event.ActionEvent evt) {
+    javax.swing.JButton clickedButton = (javax.swing.JButton) evt.getSource();
+    String digit = clickedButton.getText();
+
+    if (startNewNumber) {
+        display.setText(digit);
+        startNewNumber = false;
+    } else {
+        display.setText(display.getText() + digit);
+    }
+}
+
+// ---- OPERATOR buttons (+ - * /) ----
+private void btnOperatorActionPerformed(java.awt.event.ActionEvent evt) {
+    javax.swing.JButton clickedButton = (javax.swing.JButton) evt.getSource();
+    firstOperand = readDisplay();
+    operator = clickedButton.getText();
+    startNewNumber = true;
+}
+
+// ---- EQUALS button (=) ----
+private void btnEqualsActionPerformed(java.awt.event.ActionEvent evt) {
+    double secondOperand = readDisplay();
+    double result = 0;
+
+    switch (operator) {
+        case "+": result = firstOperand + secondOperand; break;
+        case "-": result = firstOperand - secondOperand; break;
+        case "*": result = firstOperand * secondOperand; break;
+        case "/":
+            if (secondOperand != 0) {
+                result = firstOperand / secondOperand;
+            } else {
+                display.setText("Error");
+                startNewNumber = true;
+                return;
+            }
+            break;
+        default: return;
+    }
+
+    display.setText(String.valueOf(result));
+    startNewNumber = true;
+}
+
+// ---- CLEAR button (C) ----
+private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {
+    display.setText("0");
+    firstOperand = 0;
+    operator = "";
+    startNewNumber = true;
+}
+
+=====================================================================
+HOW TO WIRE THEM IN THE DESIGNER
+=====================================================================
+Click a button, open the Events tab in Properties (or right-click >
+Events > Action > actionPerformed), then pick the existing handler from the
+drop-down:
+  - btn0..btn9              -> btnNumberActionPerformed
+  - btnDivide, btnMultiply,
+    btnSubtract, btnAdd     -> btnOperatorActionPerformed
+  - btnEquals               -> btnEqualsActionPerformed
+  - btnClear                -> btnClearActionPerformed
+Tip: select several buttons at once (Ctrl + click) to set the same handler
+for all of them in one go.

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.calculator.CalculatorController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <TextField fx:id="display" text="0" editable="false" alignment="CENTER_RIGHT"
+                 style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-background-color: white;" />
+      <GridPane hgap="5.0" vgap="5.0" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+            <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" percentHeight="25.0" />
+            <RowConstraints vgrow="ALWAYS" percentHeight="25.0" />
+            <RowConstraints vgrow="ALWAYS" percentHeight="25.0" />
+            <RowConstraints vgrow="ALWAYS" percentHeight="25.0" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btn7" text="7" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="0" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn8" text="8" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="0" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn9" text="9" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="0" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btnDivide" text="/" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="0" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn4" text="4" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="1" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn5" text="5" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="1" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn6" text="6" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="1" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btnMultiply" text="*" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="1" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn1" text="1" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="2" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn2" text="2" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="2" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn3" text="3" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="2" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btnSubtract" text="-" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="2" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btn0" text="0" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="3" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btnClear" text="C" onAction="#handleClear" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false" style="-fx-background-color: #ff9696;">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btnEquals" text="=" onAction="#handleEquals" GridPane.columnIndex="2" GridPane.rowIndex="3" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false" style="-fx-background-color: #64c864;">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+            <Button fx:id="btnAdd" text="+" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="3" maxWidth="Infinity" maxHeight="Infinity" mnemonicParsing="false">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
