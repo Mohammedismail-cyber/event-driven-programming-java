@@ -5,7 +5,7 @@
 | Week 1 | Pending | Pending |
 | Week 2 | Pending | Pending |
 | Week 3 | Swing GUI | Done |
-| Week 4 | Pending | Pending |
+| Week 4 | Event Handling in Swing | Done |
 | Week 5 | Pending | Pending |
 | Week 6 | Pending | Pending |
 | Week 7 | Pending | Pending |
