@@ -2,7 +2,7 @@
 
 | Week | Topic | Status |
 |---|---|---|
-| Week 1 | Pending | Pending |
+| Week 1 | Event-Driven Fundamentals | Done |
 | Week 2 | Observer Pattern | Done |
 | Week 3 | Swing GUI | Done |
 | Week 4 | Event Handling in Swing | Done |
