@@ -8,7 +8,7 @@
 | Week 4 | Event Handling in Swing | Done |
 | Week 5 | Advanced Swing Components | Done |
 | Week 6 | Pending | Pending |
-| Week 7 | Pending | Pending |
+| Week 7 | JavaFX Event Handling | Done |
 | Week 8 | Pending | Pending |
 | Week 9 | Pending | Pending |
 | Week 10 | Pending | Pending |

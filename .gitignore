@@ -1,4 +1,5 @@
 *.class
+week07-javafx-events/target/
 build/
 dist/
 nbproject/private/
