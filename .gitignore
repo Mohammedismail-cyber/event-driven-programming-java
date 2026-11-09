@@ -1,5 +1,6 @@
 *.class
 week07-javafx-events/target/
+week10-university-system/target/
 build/
 dist/
 nbproject/private/

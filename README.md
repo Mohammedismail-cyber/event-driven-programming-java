@@ -11,4 +11,4 @@
 | Week 7 | JavaFX Event Handling | Done |
 | Week 8 | Pending | Pending |
 | Week 9 | Pending | Pending |
-| Week 10 | Pending | Pending |
+| Week 10 | Final Project: University Management System | Done |
