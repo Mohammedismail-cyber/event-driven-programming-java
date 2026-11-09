@@ -3,7 +3,7 @@
 | Week | Topic | Status |
 |---|---|---|
 | Week 1 | Pending | Pending |
-| Week 2 | Pending | Pending |
+| Week 2 | Observer Pattern | Done |
 | Week 3 | Swing GUI | Done |
 | Week 4 | Event Handling in Swing | Done |
 | Week 5 | Advanced Swing Components | Done |
