@@ -1,6 +1,8 @@
 *.class
 week07-javafx-events/target/
+week08-javafx-bindings/target/
 week10-university-system/target/
+calculator-app/option-b-javafx-scenebuilder/target/
 build/
 dist/
 nbproject/private/
