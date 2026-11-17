@@ -1,4 +1,5 @@
 *.class
+week09-async-javafx/target/
 week07-javafx-events/target/
 week08-javafx-bindings/target/
 week10-university-system/target/

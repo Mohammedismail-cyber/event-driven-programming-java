@@ -10,8 +10,8 @@
 ![Maven](https://img.shields.io/badge/Maven-Build-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-![Progress](https://img.shields.io/badge/progress-9%20of%2010%20weeks-2ea44f?style=flat-square)
-![Status](https://img.shields.io/badge/status-in%20progress-orange?style=flat-square)
+![Progress](https://img.shields.io/badge/progress-10%20of%2010%20weeks-2ea44f?style=flat-square)
+![Status](https://img.shields.io/badge/status-complete-2ea44f?style=flat-square)
 
 [Curriculum](#-curriculum) · [Quick Start](#-quick-start) · [Final Project](#-final-project) · [Structure](#-repository-structure) · [Concepts](#-key-concepts)
 
@@ -50,11 +50,11 @@ flowchart LR
 | 6 | [**Introduction to JavaFX**](week06-javafx) | Stage and Scene, layouts, FXML + Scene Builder, controllers, dashboard | ✅ |
 | 7 | [**JavaFX Event Handling**](week07-javafx-events) | Filters vs handlers, mouse and key events, drag and drop, custom events | ✅ |
 | 8 | [**Properties and Bindings in JavaFX**](week08-javafx-bindings) | Observable models, listeners, unidirectional and bidirectional bindings, reactive registration form | ✅ |
-| 9 | Coming soon | – | ⏳ |
+| 9 | [**Asynchronous Programming in JavaFX**](week09-async-javafx) | Freeze vs Task, safe UI updates, live progress, restartable Service | ✅ |
 | 10 | [**Final Project: University Management System**](week10-university-system) | JavaFX + MySQL app with background tasks and a scheduled dashboard | ✅ |
 
 ```text
-Progress  █████████░  90 %
+Progress  ██████████  100 %
 ```
 
 ## 🎁 Bonus Projects
@@ -145,6 +145,7 @@ event-driven-programming-java/
 ├── week06-javafx/                      # Maven project: Stage, FXML, dashboard
 ├── week07-javafx-events/               # Maven project: filters, drag and drop
 ├── week08-javafx-bindings/             # Maven project: JavaFX properties and bindings
+├── week09-async-javafx/                # Maven project: asynchronous JavaFX Tasks and Services
 ├── week10-university-system/           # Maven project: JavaFX + MySQL
 ├── calculator-app/                     # Calculator built three ways
 └── README.md
